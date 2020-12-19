@@ -1,0 +1,72 @@
+<html>
+<head>
+    <script src="Script/jquery-3.5.1.min.js"></script>
+    <script>
+        
+        $(document).ready(function () {
+            
+            $.ajax({
+                type: "GET",
+                url: "data1.xml",
+                dataType: "xml",
+                success: function (xml) {
+                    var ctr = 0;
+                    var selectedItemTitle = (document.cookie).split('=')[1];
+                    
+                    $(xml).find('point').each(function () {
+                        var itemTitle=$(this).find("item").text();                        
+                        var cls = (itemTitle == selectedItemTitle) ? "ctrlSelected" : "ctrlButton";
+
+                        $("#target").append('<button class="'+cls+'">' + itemTitle + '</button><br>');
+                        
+                    });
+
+
+                    $(":button").click(function() { 
+                        //var selectedItemTitle = (document.cookie).split('=')[1];
+                        document.cookie = "lastitem=" + $(this).text();
+                        location.reload();
+
+                    });
+                }
+            });
+            
+        });     
+
+    </script>        
+    <style>
+        body {
+            margin: 0px;
+            text-align: center;
+        }
+
+        button {
+            width: 80%;
+            height: 50px;
+            font-size: 20px;
+            font-weight: bold;
+            border: 1px solid black;            
+        }
+        button:hover{background-color:orange;}
+
+        
+
+        .ctrlSelected{
+            background-color: red;            
+        }
+        .ctrlButton {
+            background-color: linen;            
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div id="target"></div>
+<button id="btnReset">RESET PATH</button>
+
+</body>
+
+</html>

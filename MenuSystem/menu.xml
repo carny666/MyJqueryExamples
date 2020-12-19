@@ -1,0 +1,29 @@
+<data title="My Home Page">
+    <section title="Soscial Media">        
+        <link href="https://www.reddit.com/" title="Reddit"/>
+        <link href="https://twitter.com/" title="Twitter"/>
+        <link href="https://www.youtube.com/" title="YouTube" new="true"/>
+        <link href="https://www.facebook.com/" title="Facebook"/>
+        <link href="https://www.instagram.com/" title="Instagram" />
+    </section>
+    <section title="Searching">
+        <link href="https://www.google.com/" title="Google.com"/>
+        <link href="https://www.bing.com/" title="Bing.com"/>
+        <link href="https://duckduckgo.com/" title="DuckDuckGo.com"/>
+        <link href="https://ca.search.yahoo.com/" title="Yahoo.com"/>        
+        <link href="https://www.webcrawler.com/" title="WebCrawler"/>
+        <link href="https://www.ask.com/" title="Ask.com"/>        
+        <link href="https://yandex.com/" title="Yandex.com"/>
+        <link href="https://search.creativecommons.org/" title="Creative Commons"/>
+        <link href="https://swisscows.com/" title="Swisscows"/>        
+    </section>
+    <section title="Information">
+        <link href="https://en.wikipedia.org/" title="Wikipedia"/>
+        <link href="https://www.digitalocean.com/" title="Digital Ocean"/>
+        <link href="https://low.ms/" title="Low.ms"/>
+        <link href="https://foldoc.org/" title="Foldoc"/>
+        <link href="https://discountasp.net/" title="Discount.ASP"/>
+        <link href="https://lbry.com/" title="LBRY"/>
+    </section>
+
+</data>
